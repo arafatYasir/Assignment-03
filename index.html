@@ -173,12 +173,45 @@
                         <p class="font-medium mb-6">Apples</p>
                         <div class="rating flex justify-center mb-7">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                         </div>
-                        <button class="text-primary-color">Details</button>
+
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="text-primary-color" onclick="my_modal_5.showModal()">Details</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box px-28">
+                                <figure class="pt-20 mb-5"><img src="images/fruit6.png" /></figure>
+                                <h3 class="font-extrabold text-4xl mb-6">Apples</h3>
+                                <p class="font-medium mb-6">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+
+                                <!-- Ratings -->
+                                <div class="rating flex justify-center mb-7">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color"
+                                        checked />
+                                </div>
+                                <!-- Buttons -->
+                                <div class="modal-action justify-center gap-3">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button
+                                            class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Close</button>
+                                    </form>
+
+                                    <button
+                                        class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
 
@@ -193,10 +226,10 @@
                         <p class="font-medium mb-6">Orange</p>
                         <div class="rating flex justify-center mb-7">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                         </div>
                         <button class="text-primary-color">Details</button>
                     </div>
@@ -213,10 +246,10 @@
                         <p class="font-medium mb-6">Red Dragon</p>
                         <div class="rating flex justify-center mb-7">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                         </div>
                         <button class="text-primary-color">Details</button>
                     </div>
@@ -236,13 +269,14 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
                         </div>
                         <button class="text-primary-color">Details</button>
                     </div>
                 </div>
             </div>
 
+            <!-- Button -->
             <div class="text-center">
                 <button class="btn btn-ghost bg-primary-color hover:bg-primary-color text-white">Shop All</button>
             </div>
