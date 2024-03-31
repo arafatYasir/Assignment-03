@@ -89,7 +89,7 @@
 
     <main class="container mx-auto mt-14">
         <!-- Banner -->
-        <div class="hero h-[650px] relative mb-80" style="background-image: url(images/banner4.png);">
+        <div class="hero h-[650px] relative lg:mb-80 mb-12" style="background-image: url(images/banner4.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-2xl">
@@ -179,6 +179,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
                         </div>
 
+                        <!-- Modal -->
                         <!-- Open the modal using ID.showModal() method -->
                         <button class="text-primary-color" onclick="my_modal_5.showModal()">Details</button>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -231,7 +232,39 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
                         </div>
-                        <button class="text-primary-color">Details</button>
+
+                        <!-- Modal -->
+                        <!-- You can open the modal using ID.showModal() method -->
+                        <button class="text-primary-color" onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box px-28">
+                                <figure class="pt-20 mb-5"><img src="images/fruit7.png" /></figure>
+                                <h3 class="font-extrabold text-4xl mb-6">Orange</h3>
+                                <p class="font-medium mb-6">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+
+                                <div class="rating flex justify-center mb-7">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color"
+                                        checked />
+                                </div>
+
+                                <div class="modal-action justify-center gap-3">
+                                    <form method="dialog">
+                                        <!-- if there is a button, it will close the modal -->
+                                        <button
+                                            class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Close</button>
+                                    </form>
+                                    <button
+                                        class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
 
@@ -251,7 +284,40 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
                         </div>
-                        <button class="text-primary-color">Details</button>
+
+                        <!-- Modal -->
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="text-primary-color" onclick="my_modal_1.showModal()">Details</button>
+                        <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box px-28">
+                                <figure class="pt-20 mb-5"><img src="images/fruit8.png" /></figure>
+                                <h3 class="font-extrabold text-4xl mb-6">Red Dragon</h3>
+                                <p class="font-medium mb-6">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+
+                                <!-- Ratings -->
+                                <div class="rating flex justify-center mb-7">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color"
+                                        checked />
+                                </div>
+
+                                <div class="modal-action justify-center gap-3">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button
+                                            class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Close</button>
+                                    </form>
+                                    <button
+                                        class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
 
@@ -271,7 +337,39 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" checked />
                         </div>
-                        <button class="text-primary-color">Details</button>
+
+                        <!-- Modal -->
+                        <button class="text-primary-color" onclick="my_modal_2.showModal()">Details</button>
+                        <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box px-28">
+                                <figure class="pt-20 mb-5"><img src="images/fruit9.png" /></figure>
+                                <h3 class="font-extrabold text-4xl mb-6">Banana</h3>
+                                <p class="font-medium mb-6">Professional employees are there for you to pick the most
+                                    amazing
+                                    and fresh fruits.</p>
+
+                                <!-- Ratings -->
+                                <div class="rating flex justify-center mb-7">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary-color"
+                                        checked />
+                                </div>
+
+                                <div class="modal-action justify-center gap-3">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button
+                                            class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Close</button>
+                                    </form>
+                                    <button
+                                        class="btn btn-ghost hover:bg-primary-color hover:text-white border-primary-color border-2 text-primary-color">Buy
+                                        Now</button>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
