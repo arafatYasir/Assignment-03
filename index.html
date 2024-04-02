@@ -89,18 +89,19 @@
 
     <main class="container mx-auto mt-14">
         <!-- Banner -->
-        <section class="hero h-[650px] relative lg:mb-80 mb-12" style="background-image: url(images/banner4.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
+        <section class="hero md:h-[650px] h-60 relative lg:mb-80 mb-12 rounded-2xl"
+            style="background-image: url(images/banner4.png);">
+            <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+            <div class="hero-content text-center text-neutral-content p-0">
                 <div class="max-w-2xl">
-                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
+                    <h1 class="lg:text-7xl text-3xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
                     <p class="text-xl font-medium mb-8">We supply highly quality organic products</p>
                     <button class="btn btn-ghost bg-primary-color hover:bg-primary-color">Get Started</button>
                 </div>
             </div>
 
             <!-- Extra/Bonus Section -->
-            <div class="hidden lg:absolute top-[530px] lg:flex lg:bg-white lg:px-16 lg:py-12 lg:gap-24">
+            <div class="hidden drop-shadow-md lg:absolute top-[530px] lg:flex lg:bg-white lg:px-16 lg:py-12 lg:gap-24">
                 <div class="flex flex-col items-center">
                     <img src="images/fruit1.png" alt="">
                     <p class="text-xl font-medium">Grapes</p>
@@ -132,7 +133,7 @@
         <section>
             <div class="flex flex-col lg:flex-row lg:justify-between gap-9 items-center mb-12">
                 <div class="text-center md:text-left">
-                    <h2 class="text-5xl font-extrabold mb-6">Deal of the day</h2>
+                    <h2 class="md:text-5xl text-2xl font-extrabold mb-6">Deal of the day</h2>
                     <p class="font-medium max-w-[520px]">Contrary to popular belief, is not simply random text. It has
                         roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
@@ -381,36 +382,68 @@
         </section>
 
         <!-- Meet the team -->
-        <section class="hero h-[700px] mt-28"
-            style="background-image: url(images/team.png);">
+        <section class="hero h-[700px] mt-28" style="background-image: url(images/team.png);">
             <div class="hero-overlay bg-opacity-70"></div>
             <div class="hero-content text-center text-neutral-content flex-col">
                 <div class="lg:max-w-2xl">
-                    <h1 class="mb-6 text-5xl font-extrabold">Meet the team section</h1>
-                    <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <h1 class="mb-6 md:text-5xl text-2xl font-extrabold">Meet the team</h1>
+                    <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a
+                        piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
 
                 <!-- Members -->
-                <div class="flex gap-28 mt-12">
+                <div class="flex flex-col lg:flex-row lg:gap-28 gap-6 lg:mt-12 mt-5">
                     <div class="flex flex-col items-center gap-5">
                         <img src="images/member1.png" alt="">
                         <h4 class="text-2xl font-bold">Awlad Hossain</h4>
                         <p class="font-medium">Fruits Expert</p>
+
+                        <div class="flex gap-3 items-center">
+                            <a class="link"><img src="images/fb-icon.jpg" alt="facebook-icon" class="rounded-full"></a>
+                            <a class="link"><img src="images/twitter-icon.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                            <a class="link"><img src="images/linkedin-logo.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                        </div>
                     </div>
                     <div class="flex flex-col items-center gap-5">
                         <img src="images/member2.png" alt="">
                         <h4 class="text-2xl font-bold">Safia Chowdhury</h4>
                         <p class="font-medium">Fruits Expert</p>
+
+                        <div class="flex gap-3 items-center">
+                            <a class="link"><img src="images/fb-icon.jpg" alt="facebook-icon" class="rounded-full"></a>
+                            <a class="link"><img src="images/twitter-icon.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                            <a class="link"><img src="images/linkedin-logo.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                        </div>
                     </div>
                     <div class="flex flex-col items-center gap-5">
                         <img src="images/member3.png" alt="">
                         <h4 class="text-2xl font-bold">Rokib Hossain</h4>
                         <p class="font-medium">Fruits Expert</p>
+
+                        <div class="flex gap-3 items-center">
+                            <a class="link"><img src="images/fb-icon.jpg" alt="facebook-icon" class="rounded-full"></a>
+                            <a class="link"><img src="images/twitter-icon.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                            <a class="link"><img src="images/linkedin-logo.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                        </div>
                     </div>
                     <div class="flex flex-col items-center gap-5">
                         <img src="images/member4.png" alt="">
                         <h4 class="text-2xl font-bold">Chaity</h4>
                         <p class="font-medium">Fruits Expert</p>
+
+                        <div class="flex gap-3 items-center">
+                            <a class="link"><img src="images/fb-icon.jpg" alt="facebook-icon" class="rounded-full"></a>
+                            <a class="link"><img src="images/twitter-icon.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                            <a class="link"><img src="images/linkedin-logo.jpg" alt="facebook-icon"
+                                    class="rounded-full"></a>
+                        </div>
                     </div>
                 </div>
             </div>
