@@ -43,7 +43,7 @@
 
 <body class="lato">
     <header class="container mx-auto mt-12">
-        <div class="navbar md:bg-primary-color md:rounded-full">
+        <div class="navbar md:bg-primary-color md:rounded-full p-0 lg:p-4">
             <div class="navbar-start hidden lg:flex md:text-white">
                 <ul class="menu menu-horizontal px-1 font-medium text-lg">
                     <li><a>Home</a></li>
@@ -53,25 +53,10 @@
                 </ul>
             </div>
             <div class="navbar-center md:text-white">
-                <div class="dropdown flex items-center">
-                    <a class="btn btn-ghost">
-                        <img src="images/logo.png" alt="logo" class="w-2/12">
-                        <span class="font-bold text-4xl">Fruit Burst</span>
-                    </a>
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>All Fruits</a></li>
-                    </ul>
-                </div>
+                <a class="btn btn-ghost p-0">
+                    <img src="images/logo.png" alt="logo" class="w-2/12">
+                    <span class="font-bold lg:text-4xl text-2xl">Fruit Burst</span>
+                </a>
             </div>
             <div class="navbar-end hidden md:flex md:mr-7">
                 <label class="input rounded-full flex items-center gap-2">
@@ -84,19 +69,36 @@
                     </svg>
                 </label>
             </div>
+            <!-- Second End -->
+            <div class="md:hidden navbar-end dropdown flex">
+                <!-- Dropdown -->
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
     <main class="container mx-auto mt-14">
         <!-- Banner -->
-        <section class="hero md:h-[650px] h-60 relative lg:mb-80 mb-12 rounded-2xl"
+        <section class="mx-auto hero md:h-[650px] md:w-full w-[95%] h-60 relative lg:mb-80 mb-12 rounded-2xl"
             style="background-image: url(images/banner4.png);">
             <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
             <div class="hero-content text-center text-neutral-content p-0">
                 <div class="max-w-2xl">
-                    <h1 class="lg:text-7xl text-3xl font-extrabold mb-6">Exotic tastes at your doorstep</h1>
+                    <h1 class="lg:text-7xl text-3xl font-extrabold mb-6">Exotic tastes at your <br>doorstep</h1>
                     <p class="text-xl font-medium mb-8">We supply highly quality organic products</p>
-                    <button class="btn btn-ghost bg-primary-color hover:bg-primary-color">Get Started</button>
+                    <button class="btn btn-ghost bg-primary-color hover:bg-primary-color">Shop Now</button>
                 </div>
             </div>
 
@@ -131,31 +133,31 @@
 
         <!-- Deal of the Day -->
         <section>
-            <div class="flex flex-col lg:flex-row lg:justify-between gap-9 items-center mb-12">
+            <div class="flex flex-col lg:flex-row lg:justify-between gap-9 items-center mb-12 px-6">
                 <div class="text-center md:text-left">
                     <h2 class="md:text-5xl text-2xl font-extrabold mb-6">Deal of the day</h2>
                     <p class="font-medium max-w-[520px]">Contrary to popular belief, is not simply random text. It has
                         roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
-                <div class="flex items-baseline gap-8">
-                    <div>
-                        <h2 class="text-4xl font-extrabold">29</h2>
-                        <p class="font-medium">Days</p>
+                <div class="flex items-baseline justify-center md:gap-8 gap-6">
+                    <div class="flex flex-col items-center">
+                        <h2 class="md:text-4xl text-3xl font-extrabold">29</h2>
+                        <p class="font-medium md:text-base text-xs">Days</p>
                     </div>
                     <div class="font-bold">:</div>
-                    <div>
-                        <h2 class="text-4xl font-extrabold">15</h2>
-                        <p class="font-medium">Hours</p>
+                    <div class="flex flex-col items-center">
+                        <h2 class="md:text-4xl text-3xl font-extrabold">15</h2>
+                        <p class="font-medium md:text-base text-xs">Hours</p>
                     </div>
                     <div class="font-bold">:</div>
-                    <div>
-                        <h2 class="text-4xl font-extrabold">25</h2>
-                        <p class="font-medium">Minutes</p>
+                    <div class="flex flex-col items-center">
+                        <h2 class="md:text-4xl text-3xl font-extrabold">25</h2>
+                        <p class="font-medium md:text-base text-xs">Minutes</p>
                     </div>
                     <div class="font-bold">:</div>
-                    <div>
-                        <h2 class="text-4xl font-extrabold">08</h2>
-                        <p class="font-medium">seconds</p>
+                    <div class="flex flex-col items-center">
+                        <h2 class="md:text-4xl text-3xl font-extrabold">08</h2>
+                        <p class="font-medium md:text-base text-xs">seconds</p>
                     </div>
                 </div>
             </div>
@@ -382,8 +384,9 @@
         </section>
 
         <!-- Meet the team -->
-        <section class="hero h-[700px] mt-28" style="background-image: url(images/team.png);">
-            <div class="hero-overlay bg-opacity-70"></div>
+        <section class="mx-auto hero lg:h-[700px] md:w-full w-[95%] mt-28 rounded-2xl"
+            style="background-image: url(images/team.png);">
+            <div class="hero-overlay bg-opacity-70 rounded-2xl"></div>
             <div class="hero-content text-center text-neutral-content flex-col">
                 <div class="lg:max-w-2xl">
                     <h1 class="mb-6 md:text-5xl text-2xl font-extrabold">Meet the team</h1>
